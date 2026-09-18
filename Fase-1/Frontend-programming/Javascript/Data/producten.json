@@ -1,0 +1,18 @@
+[
+  {
+    "naam": "Laptop",
+    "prijs": 500,
+    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQt_JJFfwoVmQ9e-wvpY6ZcKB6RfPYmsNzRphXSfF-BHRo6PIABLBq2t4IEmndFgXeh1Sd-DcG2A7RuprncMmsacl4LK_VmuSJhf7riLYHKSteJrtXCCiENTWjtv_hr&usqp=CAc"
+  },
+  {
+    "naam": "Muis",
+    "prijs": 25,
+    "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS6hv0QQhhkjg5nRipfVkBiJq1YlQ1mj2ep5xjCysoG4Pan5EHySnC0mhwEvg_LFiDkvSr31JN0LBcQMAd91AlrV8u_aJ2VxZShc6j8PfRAfkwDje2Ypg-ezIejbA5ivhzY7cMdqug&usqp=CAc"
+  },
+
+  {
+    "naam": "Toetsenbord",
+    "prijs": 75,
+    "image": "https://qware.nl/cdn/shop/files/QW_GMK-6550_1.png?v=1745329540&width=1200"
+  }
+]

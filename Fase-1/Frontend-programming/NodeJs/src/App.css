@@ -1,0 +1,86 @@
+:root {
+  --accent: #ff7a18;
+  --muted: #666;
+  --border: #eee;
+  --shadow: 0 6px 18px rgba(157, 83, 10, 0.06);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  margin: 0;
+  color: #222222;
+}
+
+/* Header */
+.site-header{
+  background: linear-gradient(90deg,#fff8e6,#fff);
+  border-bottom: 1px solid rgba(255,122,24,0.08);
+}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;max-width:1000px;margin:0 auto;padding:1rem}
+.logo a{color:var(--accent);text-decoration:none;font-weight:700}
+.site-header nav a{margin-left:1rem;color:#444;text-decoration:none}
+.container{max-width:1000px;margin:0 auto;padding:1rem}
+
+/* Hero */
+.hero{position:relative}
+.hero .base, .hero .framework, .hero .vite{inset-inline:0;margin:0 auto}
+.hero .base{width:170px;position:relative;z-index:0}
+.hero .framework, .hero .vite{position:absolute}
+.hero .framework{z-index:1;top:34px;height:28px;transform:perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg) scale(1.4)}
+.hero .vite{z-index:0;top:107px;height:26px;width:auto;transform:perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg) scale(0.8)}
+.search { margin: 1rem 0; }
+.search input { width: 100%; padding: .6rem; border: 1px solid #ddd; border-radius: 6px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
+.card {
+  background: linear-gradient(180deg,#fff,#fffef8);
+  border: 1px solid rgba(255,122,24,0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow);
+}
+.card img { width: 100%; height: 160px; object-fit: cover; background: linear-gradient(90deg,#ffe6d6,#fff3e6); }
+.card-body { padding: 0.75rem; flex: 1; display: flex; flex-direction: column; }
+.muted { color: var(--muted); }
+.card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+.button { background: transparent; border: none; padding: .4rem .6rem; border-radius: 8px; color: var(--accent); text-decoration: none; cursor: pointer; }
+.button.primary { background: var(--accent); color: #fff; }
+.button:hover { opacity: 0.95; }
+.detail { display: flex; gap: 1rem; align-items: flex-start; }
+.detail-img { width: 320px; max-width: 40%; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); }
+.detail-body { flex: 1; }
+.form { display: grid; gap: .6rem; max-width: 480px; }
+.form input, .form label { width: 100%; }
+.form input { padding: .6rem; border: 1px solid #eee; border-radius: 8px; }
+.confirmation { background: linear-gradient(90deg,#fffef0,#fff8e6); padding: 1rem; border-radius: 10px; border: 1px solid rgba(255,122,24,0.08); }
+.actions { margin-top: 1rem; }
+
+#next-steps { display: flex; border-top: 1px solid var(--border); text-align: left; }
+#next-steps > div { flex: 1 1 0; padding: 32px; }
+@media (max-width: 1024px) { #next-steps > div { padding: 24px 20px; } #next-steps { flex-direction: column; text-align: center; } }
+
+#docs { border-right: 1px solid var(--border); }
+@media (max-width: 1024px) { #docs { border-right: none; border-bottom: 1px solid var(--border); } }
+
+#next-steps ul { list-style: none; padding: 0; display: flex; gap: 8px; margin: 32px 0 0; }
+#next-steps ul .logo { height: 18px; }
+#next-steps ul a { color: inherit; font-size: 16px; border-radius: 6px; background: transparent; display: flex; padding: 6px 12px; align-items: center; gap: 8px; text-decoration: none; transition: box-shadow 0.3s; }
+#next-steps ul a:hover { box-shadow: var(--shadow); }
+#next-steps ul a .button-icon { height: 18px; width: 18px; }
+@media (max-width: 1024px) { #next-steps ul { margin-top: 20px; flex-wrap: wrap; justify-content: center; } #next-steps ul li { flex: 1 1 calc(50% - 8px); } #next-steps ul a { width: 100%; justify-content: center; box-sizing: border-box; } }
+
+#spacer { height: 88px; border-top: 1px solid var(--border); }
+@media (max-width: 1024px) { #spacer { height: 48px; } }
+
+.ticks { position: relative; width: 100%; }
+.ticks::before, .ticks::after { content: ''; position: absolute; top: -4.5px; border: 5px solid transparent; }
+.ticks::before { left: 0; border-left-color: var(--border); }
+.ticks::after { right: 0; border-right-color: var(--border); }
